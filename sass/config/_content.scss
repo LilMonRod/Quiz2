@@ -1,0 +1,72 @@
+/********Wrapper********/
+body {
+    color: #333;
+    & h1, h2, h3{
+        font-family: Georgia, serif;
+    }
+    & p {
+        font-family: Helvetica,  Arial, sans-serif;
+    }
+}
+.wrapper {
+    width: 1100px;
+}
+
+/********Header********/
+.header>h2 {
+    font-size: 45px;
+    
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header>p {
+    font-size: 14px;
+    text-align: center;
+}
+
+/******** Columnas ********/
+/**************************/
+.column {
+    float: left;
+}
+
+/****columna izquierda*****/
+.column-left {
+    width: 55%;
+}
+.arrow {
+    width: 45px;
+    height: 45px;
+}
+.background-img {
+    width: 515px;
+    height: 720px;
+    background-image: url('img/bg-event.jpeg');
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+}
+.details>.next-event {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #73C5A5;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+.details>.date-event {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: 14px;
+}
+.details>.tittle-event{
+    font-size: 40px;
+    color: #fff;
+    margin-left: 14px;
+}
+.details>.place-event {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 14px;
+}
