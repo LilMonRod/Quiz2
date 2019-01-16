@@ -35,38 +35,64 @@ body {
     width: 55%;
 }
 .arrow {
+    float: left;
     width: 45px;
     height: 45px;
+    margin-top: 300px;
 }
-.background-img {
-    width: 515px;
-    height: 720px;
-    background-image: url('img/bg-event.jpeg');
-    background-repeat: no-repeat;
-    background-position: -1px -1px;
+.details {
+    float: left;
+    max-width: 435px;
+    max-height: 616px;
+    position: relative;
+}
+.details>img {
+    position: absolute;
 }
 .details>.next-event {
     font-size: 18px;
     padding: 10px;
     font-weight: bold;
     background-color: #73C5A5;
-    margin-top: 20px;
+    top: 20px;
     margin-left: 14px;
+    position: relative;
 }
 .details>.date-event {
-    font-size: 40px;
+    font-size: 34px;
     color: #fff;
+    top: 66px;
     margin-bottom: 10px;
     margin-left: 14px;
+    position: relative;
 }
 .details>.tittle-event{
-    font-size: 40px;
+    font-size: 24px;
     color: #fff;
+    top: 60px;
     margin-left: 14px;
+    position: relative;
 }
 .details>.place-event {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: bold;
     color: #fff;
+    top: 60px;
     margin-left: 14px;
+    position: relative;
 }
+.details>.get-details{
+    width: 415px;
+    display: block;
+    text-decoration: none;
+    background-color: #73C5A5;
+    border: none;
+    font-family: Helvetica, arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    top: 356px;
+    text-align: end;
+    position: relative;
+}
+
