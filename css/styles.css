@@ -304,6 +304,10 @@ template {
   content: "";
   clear: both; }
 
+ul {
+  list-style: none;
+  margin-top: 0; }
+
 /********Wrapper********/
 body {
   color: #333; }
