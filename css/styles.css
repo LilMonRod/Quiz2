@@ -395,4 +395,44 @@ body {
   text-align: end;
   position: relative; }
 
+/****columna derecha*****/
+.event {
+  margin-left: 60px;
+  height: 103px; }
+
+.event + .event {
+  margin-top: 30px; }
+
+.event > .date-event {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+.event > .tittle-event {
+  font-size: 12px;
+  margin-bottom: 5px;
+  font-family: Helvetica, arial, sans-serif; }
+
+.event > .place-event {
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-family: Helvetica, arial, sans-serif;
+  font-weight: bold; }
+
+.event > .get-details {
+  border: 1px solid #222;
+  border-radius: 100px;
+  background-color: #fff;
+  height: 30px;
+  text-transform: capitalize;
+  font-size: 12px;
+  padding: 5px 13px;
+  color: #222;
+  text-decoration: none; }
+
+.event-selected {
+  border-left: 15px solid #73C5A5;
+  padding-left: 40px; }
+
 /*# sourceMappingURL=styles.css.map */
