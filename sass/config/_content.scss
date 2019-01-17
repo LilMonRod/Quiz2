@@ -15,7 +15,7 @@ body {
 /********Header********/
 .header>h2 {
     font-size: 45px;
-    
+
     margin-bottom: 10px;
     text-align: center;
 }
@@ -48,6 +48,7 @@ body {
 }
 .details>img {
     position: absolute;
+    filter: brightness(70%);
 }
 .details>.next-event {
     font-size: 18px;
@@ -69,6 +70,7 @@ body {
 .details>.tittle-event{
     font-size: 24px;
     color: #fff;
+    font-weight: lighter;
     top: 60px;
     margin-left: 14px;
     position: relative;
@@ -103,7 +105,7 @@ body {
     height: 103px;
 }
 .event + .event {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 .event>.date-event {
     font-size: 24px;
@@ -136,4 +138,5 @@ body {
 .event-selected {
     border-left: 15px solid #73C5A5;
     padding-left: 40px;
+    transition: border-left 2s;
 }

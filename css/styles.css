@@ -351,7 +351,8 @@ body {
   position: relative; }
 
 .details > img {
-  position: absolute; }
+  position: absolute;
+  filter: brightness(70%); }
 
 .details > .next-event {
   font-size: 18px;
@@ -373,6 +374,7 @@ body {
 .details > .tittle-event {
   font-size: 24px;
   color: #fff;
+  font-weight: lighter;
   top: 60px;
   margin-left: 14px;
   position: relative; }
@@ -437,6 +439,7 @@ body {
 
 .event-selected {
   border-left: 15px solid #73C5A5;
-  padding-left: 40px; }
+  padding-left: 40px;
+  transition: border-left 2s; }
 
 /*# sourceMappingURL=styles.css.map */
