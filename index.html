@@ -4,65 +4,66 @@
   <meta charset="UTF-8">
   <title>events</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="wrapper clearfix">
-    <div class="header">
-      <h2>Upcoming Events and Activities</h2>
-      <p>We've got a full schedule. Follow us to see if Gearheads are hosting exiting events in your area.</p>
+  <div class="wrapper-events clearfix">
+    <div class="events__header">
+      <h2 class="events-header__title">Upcoming Events and Activities</h2>
+      <p class="events-header__subtitle">We've got a full schedule. Follow us to see if Gearheads are hosting exiting events in your area.</p>
     </div>
-    <div class="column column-left">
+    <div class="events__columns events__columns--left">
       <!-- Columna izquierda -->
-      <img class="arrow" src="img/arrow/arrow-left.svg" alt="arrow-left">
-      <div class="details clearfix">
-        <img src="img/1st-event/bg-event.png" alt="place of the event">
-        <span class="next-event">Next Event </span>
-        <h2 class="date-event">Jan 26th</h2>
-        <p class="tittle-event">ROCK to ICE Clinic - Ouray Ice Climbing Festival</p>
-        <p class="place-event">- Ouray Ice Park</p>
-        <a class="get-details" href="#">Get Event Details</a>
+      <img class="events-columns__arrow events-columns__arrow--left" src="img/arrow/arrow-left.svg" alt="arrow-left">
+      <div id="container-details" class="events-columns__details clearfix">
+        <img class="events-columns-details__img" src="img/1st-event/bg-event.png" alt="place of the event">
+        <span class="events-columns-details__next-event">Next Event </span>
+        <h2 class="events-columns-details__date-event">Jan 26th</h2>
+        <p class="events-columns-details__tittle-event">ROCK to ICE Clinic - Ouray Ice Climbing Festival</p>
+        <p class="events-columns-details__place-event">- Ouray Ice Park</p>
+        <a class="events-columns-details__get-details" href="#">Get Event Details</a>
       </div>
-      
-      <img class="arrow" src="img/arrow/arrow-right.svg" alt="arrow-right">
+
+      <img class="events-columns__arrow events-columns__arrow--right" src="img/arrow/arrow-right.svg" alt="arrow-right">
     </div>
 
-    <div class="column column-right">
+    <div class="events__columns events__columns--right">
       <!-- Columna derecha -->
       <ul>
-        <li class="event event-selected">
-          <h2 class="date-event"> Jan 26th</h2>
-          <p class="tittle-event">ROCK to ICE Clinic - Ouray Ice Climbing Festival</p>
-          <p class="place-event">- Ouray Ice Park</p>
-          <a class="get-details" href="#">Get Event Details</a>
+        <li id="event1" class="events-columns__event events-columns__event--selected">
+          <h2 class="events-columns__date-event"> Jan 26th</h2>
+          <p class="events-columns__tittle-event">ROCK to ICE Clinic - Ouray Ice Climbing Festival</p>
+          <p class="events-columns__place-event">- Ouray Ice Park</p>
+          <a class="events-columns__get-details" href="#">Get Event Details</a>
         </li>
-        <li class="event">
-          <h2 class="date-event">Jan 30th - Feb 1st</h2>
-          <p class="tittle-event">Outdoor Retailer Snow Show</p>
-          <p class="place-event">- The Colorado Convention Center</p>
-          <a class="get-details" href="#">Get Event Details</a>
+        <li id="event2" class="events-columns__event">
+          <h2 class="events-columns__date-event">Jan 30th - Feb 1st</h2>
+          <p class="events-columns__tittle-event">Outdoor Retailer Snow Show</p>
+          <p class="events-columns__place-event">- The Colorado Convention Center</p>
+          <a class="events-columns__get-details" href="#">Get Event Details</a>
         </li>
-        <li class="event">
-          <h2 class="date-event">Feb 1st</h2>
-          <p class="tittle-event">Berthoud Backcuntry Bonanza</p>
-          <p class="place-event">- Berthoud Pass</p>
-          <a class="get-details" href="#">Get Event Details</a>
+        <li id="event3" class="events-columns__event">
+          <h2 class="events-columns__date-event">Feb 1st</h2>
+          <p class="events-columns__tittle-event">Berthoud Backcuntry Bonanza</p>
+          <p class="events-columns__place-event">- Berthoud Pass</p>
+          <a class="events-columns__get-details" href="#">Get Event Details</a>
         </li>
-        <li class="event">
-          <h2 class="date-event">Feb 3rd</h2>
-          <p class="tittle-event">Fat Biking @ Devils Thumb Ranch</p>
-          <p class="place-event">- Devils Thumb Ranch Resort & Spa</p>
-          <a class="get-details" href="#">Get Event Details</a>
+        <li id="event4" class="events-columns__event">
+          <h2 class="events-columns__date-event">Feb 3rd</h2>
+          <p class="events-columns__tittle-event">Fat Biking @ Devils Thumb Ranch</p>
+          <p class="events-columns__place-event">- Devils Thumb Ranch Resort & Spa</p>
+          <a class="events-columns__get-details" href="#">Get Event Details</a>
         </li>
-        <li class="event">
-          <h2 class="date-event">Feb 4th - Feb 5th</h2>
-          <p class="tittle-event">SIA/WWSRA On-Snow Demo</p>
-          <p class="place-event">- Copper Mountain</p>
-          <a class="get-details" href="#">Get Event Details</a>
+        <li id="event5" class="events-columns__event">
+          <h2 class="events-columns__date-event">Feb 4th - Feb 5th</h2>
+          <p class="events-columns__tittle-event">SIA/WWSRA On-Snow Demo</p>
+          <p class="events-columns__place-event">- Copper Mountain</p>
+          <a class="events-columns__get-details" href="#">Get Event Details</a>
         </li>
       </ul>
     </div>
-  </div>  
-    
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

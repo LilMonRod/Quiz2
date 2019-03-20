@@ -1,141 +1,166 @@
 /********Wrapper********/
 body {
+
+}
+.wrapper-events {
     color: #333;
-    & h1, h2, h3{
+    width: 1100px;
+    & h1,
+      h2,
+      h3{
         font-family: Georgia, serif;
     }
     & p {
         font-family: Helvetica,  Arial, sans-serif;
     }
 }
-.wrapper {
-    width: 1100px;
-}
 
 /********Header********/
-.header>h2 {
+.events-header__title {
     font-size: 45px;
-
     margin-bottom: 10px;
     text-align: center;
 }
-.header>p {
+
+.events-header__subtitle {
     font-size: 14px;
     text-align: center;
 }
 
 /******** Columnas ********/
 /**************************/
-.column {
+.events__columns {
     float: left;
 }
 
 /****columna izquierda*****/
-.column-left {
+.events__columns--left {
     width: 55%;
 }
-.arrow {
-    float: left;
-    width: 45px;
-    height: 45px;
-    margin-top: 300px;
+
+.events-columns__arrow {
+  margin-top: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 45px;
+  width: 45px;
 }
-.details {
+
+.events-columns__arrow--left {
+  float: left;
+}
+
+.events-columns__arrow--right {
+  float: right;
+}
+
+.events-columns__details {
     float: left;
     max-width: 435px;
     max-height: 616px;
     position: relative;
 }
-.details>img {
+
+.events-columns-details__img {
     position: absolute;
     filter: brightness(70%);
 }
-.details>.next-event {
-    font-size: 18px;
-    padding: 10px;
-    font-weight: bold;
+
+.events-columns-details__next-event {
     background-color: #73C5A5;
-    top: 20px;
+    font-size: 18px;
+    font-weight: bold;
     margin-left: 14px;
+    padding: 10px;
     position: relative;
+    top: 20px;
 }
-.details>.date-event {
-    font-size: 34px;
+
+.events-columns-details__date-event {
     color: #fff;
-    top: 66px;
+    font-size: 34px;
     margin-bottom: 10px;
     margin-left: 14px;
     position: relative;
+    top: 66px;
 }
-.details>.tittle-event{
-    font-size: 24px;
+
+.events-columns-details__tittle-event {
     color: #fff;
+    font-size: 24px;
     font-weight: lighter;
-    top: 60px;
     margin-left: 14px;
     position: relative;
+    top: 60px;
 }
-.details>.place-event {
+
+.events-columns-details__place-event {
+    color: #fff;
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
-    top: 60px;
     margin-left: 14px;
     position: relative;
+    top: 60px;
 }
-.details>.get-details{
-    width: 415px;
+
+.events-columns-details__get-details{
+    border: none;
+    color: #fff;
     display: block;
     text-decoration: none;
     background-color: #73C5A5;
-    border: none;
     font-family: Helvetica, arial, sans-serif;
     font-size: 12px;
-    color: #fff;
     padding: 10px;
-    top: 356px;
     text-align: end;
     position: relative;
+    top: 356px;
+    width: 415px;
 }
-
 
 /****columna derecha*****/
-.event {
-    margin-left: 60px;
+.events-columns__event {
     height: 103px;
+    margin-left: 60px;
 }
-.event + .event {
+
+.events-columns__event + .events-columns__event {
     margin-top: 30px;
 }
-.event>.date-event {
+
+.events-columns__date-event {
     font-size: 24px;
     margin-bottom: 10px;
     margin-top: 0;
 }
-.event>.tittle-event {
+
+.events-columns__tittle-event {
+    font-family: Helvetica, arial, sans-serif;
     font-size: 12px;
     margin-bottom: 5px;
-    font-family: Helvetica, arial, sans-serif;
 }
-.event>.place-event {
+
+.events-columns__place-event {
+    font-family: Helvetica, arial, sans-serif;
     font-size: 12px;
+    font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
-    font-family: Helvetica, arial, sans-serif;
-    font-weight: bold;
 }
-.event>.get-details {
+
+.events-columns__get-details {
+    background-color: #fff;
     border: 1px solid #222;
     border-radius: 100px;
-    background-color: #fff;
-    height: 30px;
-    text-transform: capitalize;
-    font-size: 12px;
-    padding: 5px 13px;
     color: #222;
+    font-size: 12px;
+    height: 30px;
+    padding: 5px 13px;
     text-decoration: none;
+    text-transform: capitalize;
 }
-.event-selected {
+
+.events-columns__event--selected {
     border-left: 15px solid #73C5A5;
     padding-left: 40px;
     transition: border-left 2s;
